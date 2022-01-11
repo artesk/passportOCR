@@ -1,6 +1,6 @@
 FROM python:3
 RUN apt -y update
-RUN apt -y install tesseract-ocr 
+RUN apt -y install tesseract-ocr --fix-missing
 RUN apt -y install libtesseract-dev
 RUN pip3 install web.py
 RUN pip3 install PassportEye
